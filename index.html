@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árvore Genealógica</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="tree">
+        <div class="node" onclick="toggleChildren(this)">
+            <div>
+            <img src="imagens/antonio.jpg" alt="Nome da Pessoa">
+            <img src="imagens/sebastiana.jpg" alt="Nome da Pessoa">  
+            </div>
+            <span>Nome: Antonio e Sebastiana</span>
+            <span>Código Verificador: M000</span>
+            <div class="connector"></div>
+            <p>Em Gurinhém, uma cidadezinha charmosa no interior da Paraíba, vivia um casal que se tornou uma verdadeira lenda local. Seu José e Dona Maria, ambos com um coração tão grande quanto o sertão que os rodeava, construíram uma família numerosa e cheia de amor.
+                Desde cedo, Seu José e Dona Maria decidiram que todos os seus filhos teriam nomes começando com a letra M, em homenagem ao primeiro encontro deles na Praça da Matriz, durante a missa de domingo. E assim, foram abençoados com 12 filhos: Marcos, Mariana, Miguel, Marília, Mateus, Maíra, Murilo, Melissa, Moisés, Mirela, Mário e Márcia.</p>
+                
+                A casa de Seu José e Dona Maria era sempre cheia de risos, conversas animadas e o cheiro delicioso dos pratos preparados com carinho. Cada um dos filhos trouxe uma nova camada de alegria e dinamismo à vida do casal, que educou todos com base nos valores de respeito, união e amor ao próximo.
+                
+                Os filhos cresceram e, seguindo a tradição, deram aos seus próprios filhos nomes começando com a letra M. Era comum ver nas ruas de Gurinhém uma porção de netos correndo e brincando, todos com nomes como Matheus, Monique, Miguelzinho, Micaela, entre outros. A tradição não era apenas uma escolha de nomes, mas um símbolo de continuidade e ligação familiar.
+                
+                <p>Certa vez, numa manhã ensolarada, Dona Maria decidiu registrar a rotina alegre da família em um vídeo para compartilhar com parentes distantes. O vídeo acabou viralizando na internet, tocando o coração de muitas pessoas que se encantaram com a história desse casal e sua prole numerosa. O vídeo, que pode ser visto aqui, mostra a simplicidade e a beleza da vida em família, e como o amor e a união podem transcender gerações.</p>
+                
+                A história de Seu José e Dona Maria é um verdadeiro testemunho de como a vida, mesmo nos rincões do Brasil, pode ser rica em valores e significados. Gurinhém se orgulha desse casal, que deixou um legado de amor e tradição, inspirando não só seus descendentes, mas todos que têm a sorte de conhecer sua história.</p>
+                <input type="button" value="Clique e Veja a Árvore">
+            <div class="children">
+                <div class="node" onclick="openModal('modal1')">
+                    <img src="imagens/marcelo.jpg" alt="Nome da Pessoa">
+                    <span>Nome: MARCELO PINHEIRO</span>
+                    <span>Data de Nascimento: 01/01/1990</span>
+                    <span>Código Verificador: M001</span>
+                </div>
+                
+                <div class="node" onclick="openModal('modal2')">
+                    <img src="imagens/murilo.jpg" alt="Nome da Pessoa">
+                    <span>Nome: MURILO PINHEIRO</span>
+                    <span>Data de Nascimento: 01/01/1990</span>
+                    <span>Código Verificador: M002</span>
+                </div>
+                <div class="node" onclick="openModal('modal3')">
+                    <img src="imagens/manasseis.jpg" alt="Nome da Pessoa">
+                    <span>Nome: MONASSEIS PINHEIRO</span>
+                    <span>Data de Nascimento: 01/01/1990</span>
+                    <span>Código Verificador: M003</span>
+                </div>
+                <div class="node" onclick="openModal('modal4')">
+                    <img src="imagens/marconi.jpg" alt="Nome da Pessoa">
+                    <span>Nome: MARCONI PINHEIRO</span>
+                    <span>Data de Nascimento: 01/01/1990</span>
+                    <span>Código Verificador: M004</span>
+                </div>
+                <div class="node" onclick="openModal('modal5')">
+                    <img src="imagens/marquito.jpg" alt="Nome da Pessoa">
+                    <span>Nome: MARCOS PINHEIRO</span>
+                    <span>Data de Nascimento: 01/01/1990</span>
+                    <span>Código Verificador: M005</span>
+                </div>
+                <div class="node" onclick="openModal('modal6')">
+                    <img src="imagens/marcio.jpg" alt="Nome da Pessoa">
+                    <span>Nome: MARCIO PINHEIRO</span>
+                    <span>Data de Nascimento: 01/01/1990</span>
+                    <span>Código Verificador: M006</span>
+                </div>
+                <div class="node" onclick="openModal('modal7')">
+                    <img src="imagens/Marilda.jpg" alt="Nome da Pessoa">
+                    <span>Nome: MARILDA PINHEIRO</span>
+                    <span>Data de Nascimento: 01/01/1990</span>
+                    <span>Código Verificador: M007</span>
+                </div>
+                <div class="node" onclick="openModal('modal8')">
+                    <img src="imagens/marilir.jpg" alt="Nome da Pessoa">
+                    <span>Nome: MARILIR PINHEIRO</span>
+                    <span>Data de Nascimento: 01/01/1990</span>
+                    <span>Código Verificador: M008</span>
+                </div>
+                <div class="node" onclick="openModal('modal9')">
+                    <img src="imagens/mariuza.jpg" alt="Nome da Pessoa">
+                    <span>Nome: MARIUZA PINHEIRO</span>
+                    <span>Data de Nascimento: 01/01/1990</span>
+                    <span>Código Verificador: M009</span>
+                </div>
+                <div class="node" onclick="openModal('modal10')">
+                    <img src="imagens/marcia.jpg" alt="Nome da Pessoa">
+                    <span>Nome: MARCIA PINHEIRO</span>
+                    <span>Data de Nascimento: 01/01/1990</span>
+                    <span>Código Verificador: M010</span>
+                </div>
+                <div class="node" onclick="openModal('modal11')">
+                    <img src="imagens/monica.jpg" alt="Nome da Pessoa">
+                    <span>Nome: MONICA PINHEIRO</span>
+                    <span>Data de Nascimento: 01/01/1990</span>
+                    <span>Código Verificador: M011</span>
+                </div>
+                <div class="node" onclick="openModal('modal12')">
+                    <img src="imagens/Marilia.jpg" alt="Nome da Pessoa">
+                    <span>Nome: MARILIA PINHEIRO</span>
+                    <span>Data de Nascimento: 01/01/1990</span>
+                    <span>Código Verificador: M012</span>
+                </div>
+                <!-- Repita para os demais filhos -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Template -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <div class="filhos">
+                <h2>Filhos de Marcelo</h2>
+            </div>
+            <!-- Adicione aqui a informação dos filhos dos filhos -->
+            <div class="node">
+                <img src="imagens/imagem-padrao.png" alt="Nome da Pessoa">
+                <span>Nome: MARCELO ALVES</span>
+                <span>Data de Nascimento: 01/01/2015</span>
+                <span>Código Verificador: ABC999</span>
+            </div>
+            <div class="node">
+                <img src="imagens/imagem-padrao.png" alt="Nome da Pessoa">
+                <span>Nome: MAURILIO ALVES</span>
+                <span>Data de Nascimento: 01/01/2015</span>
+                <span>Código Verificador: ABC999</span>
+            </div>
+            <div class="node">
+                <img src="imagens/imagem-padrao.png" alt="Nome da Pessoa">
+                <span>Nome: MYLENA ALVES</span>
+                <span>Data de Nascimento: 01/01/2015</span>
+                <span>Código Verificador: ABC999</span>
+            </div>
+            <!-- Repita para os demais netos -->
+        </div>
+    </div>
+    <div id="modal2" class="modal2">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <div class="filhos">
+                <h2>Filhos de MURILIO</h2>
+            </div>
+            <!-- Adicione aqui a informação dos filhos dos filhos -->
+            <div class="node">
+                <img src="imagens/imagem-padrao.png" alt="Nome da Pessoa">
+                <span>Nome: MAIARA</span>
+                <span>Data de Nascimento: 01/01/2015</span>
+                <span>Código Verificador: ABC999</span>
+            </div>
+            <div class="node">
+                <img src="imagens/imagem-padrao.png" alt="Nome da Pessoa">
+                <span>Nome: MARINA</span>
+                <span>Data de Nascimento: 01/01/2015</span>
+                <span>Código Verificador: ABC999</span>
+            </div>
+            <div class="node">
+                <img src="imagens/imagem-padrao.png" alt="Nome da Pessoa">
+                <span>Nome: MURILO</span>
+                <span>Data de Nascimento: 01/01/2015</span>
+                <span>Código Verificador: ABC999</span>
+            </div>
+            <!-- Repita para os demais netos -->
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>
